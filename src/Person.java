@@ -15,4 +15,16 @@ public class Person {
         Calendar calendar = Calendar.getInstance();
         return calendar.get(Calendar.YEAR) - this.age;
     }
+
+    public String get(String prefix){
+        return prefix + this.name;
+    }
+
+    public void sayHello(){
+        System.out.println("Hello!");
+    }
+
+    public void sayHello(String target){
+        System.out.println("Hello!" + target + ".");
+    }
 }
