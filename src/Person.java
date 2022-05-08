@@ -3,6 +3,8 @@ public class Person {
 
     private int age;
 
+    private Pet pet;
+
     public void setName(String name){
         this.name = name;
     }
