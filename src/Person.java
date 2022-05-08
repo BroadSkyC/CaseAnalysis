@@ -1,3 +1,5 @@
+import java.util.Calendar;
+
 public class Person {
     private String name;
 
@@ -5,5 +7,10 @@ public class Person {
 
     public void setName(String name){
         this.name = name;
+    }
+
+    public int getBirthYear(){
+        Calendar calendar = Calendar.getInstance();
+        return calendar.get(Calendar.YEAR) - this.age;
     }
 }
