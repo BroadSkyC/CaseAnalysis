@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.util.Locale;
 
 public class Person {
     private String name;
@@ -8,7 +9,9 @@ public class Person {
     private Pet pet;
 
     public void setName(String name){
+        name = name.toLowerCase();
         this.name = name;
+        System.out.println(name);
     }
 
     public String getName(){
