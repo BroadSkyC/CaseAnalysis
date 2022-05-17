@@ -5,8 +5,6 @@ public class Person {
 
     private int age;
 
-    private String socialID;
-
     public void setName(String name){
         this.name = name;
     }
@@ -21,17 +19,5 @@ public class Person {
 
     public int getAge(){
         return this.age;
-    }
-
-    public void setSocialID(String socialID){
-        this.socialID = socialID;
-    }
-
-    public void setSocialID(String socialID, boolean isSpecial){
-        if(isSpecial){
-            this.socialID = socialID.toUpperCase();
-        }else {
-            this.socialID = socialID;
-        }
     }
 }

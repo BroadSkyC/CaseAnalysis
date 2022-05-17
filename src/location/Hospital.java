@@ -1,10 +1,17 @@
 package location;
 
+import example.Director;
+
 public class Hospital {
     private Infrastructure info;
 
-    public Hospital(Infrastructure info){
+    private Director director;
+
+    public static String HospitalName;
+
+    public Hospital(Infrastructure info, Director director){
         this.info = info;
+        this.director = director;
     }
 
     public String getAddress(){
