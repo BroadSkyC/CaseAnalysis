@@ -1,3 +1,5 @@
+package curr;
+
 import location.Hospital;
 import location.Infrastructure;
 import location.InfrastructureType;
