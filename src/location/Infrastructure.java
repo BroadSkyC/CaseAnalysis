@@ -5,12 +5,11 @@ public class Infrastructure {
 
     private int capacity;
 
-    private FoundProperty foundProperty;
+    private InfrastructureType type;
 
-    public Infrastructure(String address, int capacity, FoundProperty foundProperty){
+    public Infrastructure(String address, int capacity, InfrastructureType type){
         this.address = address;
         this.capacity = capacity;
-        this.foundProperty = foundProperty;
     }
 
     public String getAddress(){
@@ -19,13 +18,5 @@ public class Infrastructure {
 
     public int getCapacity(){
         return this.capacity;
-    }
-
-    public String getFoundProperty(){
-        if(this.foundProperty == FoundProperty.GOV_FOUND){
-            return "公立";
-        }else {
-            return "私立";
-        }
     }
 }

@@ -1,11 +1,15 @@
-package prev;
+package curr;
 
-import location.FoundProperty;
+import location.Hospital;
 import location.Infrastructure;
+import location.InfrastructureType;
 
 public class Controller {
     public static void main(String[] args){
-        Infrastructure infrastructure = new Infrastructure("南京市汉口路22号", 30000, FoundProperty.GOV_FOUND);
-        System.out.println("南京大学是" + infrastructure.getFoundProperty() + "的。");
+        Infrastructure infrastructure = new Infrastructure("南京市汉口路22号", 30000, InfrastructureType.SCHOOL);
+    }
+
+    public void showHospitalName(){
+        System.out.println(Hospital.HospitalName);
     }
 }
